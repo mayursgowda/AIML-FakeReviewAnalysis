@@ -1,0 +1,176 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Member.master.cs" Inherits="DATAMINING_ASSOCIATIONRULE.Member" %>
+
+<!DOCTYPE html>
+<html lang="zxx">
+
+<head>
+      <!-- Basic -->
+      <meta charset="utf-8" />
+      <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+      <!-- Mobile Metas -->
+      <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+      <!-- Site Metas -->
+      <meta name="keywords" content="" />
+      <meta name="description" content="" />
+      <meta name="author" content="" />
+      <link rel="shortcut icon" href="images/favicon.png" type="">
+      <title>Fake Reviews</title>
+      <!-- bootstrap core css -->
+      <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
+      <!-- font awesome style -->
+      <link href="css/font-awesome.min.css" rel="stylesheet" />
+      <!-- Custom styles for this template -->
+      <link href="css/style.css" rel="stylesheet" />
+      <!-- responsive style -->
+      <link href="css/responsive.css" rel="stylesheet" />
+
+         <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+   </head>
+ 
+
+<body>
+     <div class="hero_area">
+         <!-- header section strats -->
+         <header class="header_section">
+            <div class="container">
+               <nav class="navbar navbar-expand-lg custom_nav-container ">
+                  <a class="navbar-brand" href="Homepage.aspx"><img width="250" src="images/logo.png" alt="#" /></a>
+                  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class=""> </span>
+                  </button>
+                  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                     <ul class="navbar-nav">
+                        <li class="nav-item active">
+                           <a class="nav-link" href="BrowseItems.aspx">Home <span class="sr-only">(current)</span></a>
+                        </li>
+
+                         <li class="nav-item"><a class="nav-link" href="MemberCart.aspx" runat="server"><img src= "images/cart.gif" /></a></li>  
+
+                          <li class="nav-item"><a id="A1" class="nav-link" href="MyTransactions.aspx" runat="server">Orders</a></li>
+
+                          <li class="nav-item"><a id="A2" class="nav-link" href="Member_Tasks.aspx?value=Feedbacks" runat="server">Feedbacks</a></li>
+
+                          <li class="nav-item"><a id="A3" class="nav-link" href="_ProfileUpdation.aspx" runat="server">AOI</a></li>
+                       
+                        <li class="nav-item"><a class="nav-link" href="ItemFeedbacks.aspx" runat="server">Reviews</a></li>
+                        <li class="nav-item"><a class="nav-link" href="Member_Tasks.aspx?value=Changepassword" runat="server">Account</a></li>
+                        
+
+                         <li class="nav-item">
+                           <a class="nav-link" href="Signout.aspx?value=admin">Signout</a>
+                        </li>
+                      
+                       
+                     </ul>
+                  </div>
+               </nav>
+            </div>
+         </header>
+         <!-- end header section -->
+         <!-- slider section -->
+         
+         <!-- end slider section -->
+    
+
+       <form id="form1" runat="server">
+    <div>
+        <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+        
+        </asp:ContentPlaceHolder>
+
+        <div class="clr"></div>
+    </div>
+    </form>
+
+      </div>
+    
+    <!-- footer start -->
+      <footer>
+         <div class="container">
+            <div class="row">
+               <div class="col-md-4">
+                   <div class="full">
+                      <div class="logo_footer">
+                        <a href="#"><img width="210" src="images/logo.png" alt="#" /></a>
+                      </div>
+                      <div class="information_f">
+                        <p><strong>ADDRESS:</strong> Stone Building, CSE, JNNCE, Shimoga, India</p>
+                        <p><strong>TELEPHONE:</strong> +91 987 654 3210</p>
+                        <p><strong>EMAIL:</strong> aabd@gmail.com</p>
+                      </div>
+                   </div>
+               </div>
+               <div class="col-md-8">
+                  <div class="row">
+                  <div class="col-md-7">
+                     <div class="row">
+                        <div class="col-md-6">
+                     <div class="widget_menu">
+                        <h3>Menu</h3>
+                        <ul>
+                           <li><a href="#">Home</a></li>
+                           <li><a href="#">About</a></li>
+                           <li><a href="#">Services</a></li>
+                           <li><a href="#">Testimonial</a></li>
+                           <li><a href="#">Blog</a></li>
+                           <li><a href="#">Contact</a></li>
+                        </ul>
+                     </div>
+                  </div>
+                  <div class="col-md-6">
+                     <div class="widget_menu">
+                        <h3>Account</h3>
+                        <ul>
+                           <li><a href="Member_Tasks.aspx?value=Changepassword">Account</a></li>
+                           <li><a href="#">Checkout</a></li>
+                           <li><a href="#">Login</a></li>
+                           <li><a href="#">Register</a></li>
+                           <li><a href="#">Shopping</a></li>
+                           <li><a href="#">Widget</a></li>
+                        </ul>
+                     </div>
+                  </div>
+                     </div>
+                  </div>     
+                  <div class="col-md-5">
+                     <div class="widget_menu">
+                        <h3>Newsletter</h3>
+                        <div class="information_f">
+                          <p>Subscribe by our newsletter and get update protidin.</p>
+                        </div>
+                        <div class="form_sub">
+                          <%-- <form>
+                              <fieldset>
+                                 <div class="field">
+                                    <input type="email" placeholder="Enter Your Mail" name="email" />
+                                    <input type="submit" value="Subscribe" />
+                                 </div>
+                              </fieldset>
+                           </form>--%>
+                        </div>
+                     </div>
+                  </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </footer>
+      <!-- footer end -->
+      <div class="cpy_">
+         <p class="mx-auto">© All Rights Reserved By <a href="https://html.design/">Product Fake Reviews</a><br>
+         
+            Using <a href="https://themewagon.com/" target="_blank">Machine Learning</a>
+         
+         </p>
+      </div>
+      <!-- jQery -->
+     <%-- <script src="js/jquery-3.4.1.min.js"></script>
+      <!-- popper js -->
+      <script src="js/popper.min.js"></script>
+      <!-- bootstrap js -->
+      <script src="js/bootstrap.js"></script>
+      <!-- custom js -->
+      <script src="js/custom.js"></script>--%>
+   </body>
+</html>
